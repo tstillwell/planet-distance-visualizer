@@ -1,4 +1,4 @@
-function loadDemo(){
+function loadScene(){
     var scene = new THREE.Scene();
     camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
     controls = new THREE.OrbitControls(camera);
@@ -17,4 +17,4 @@ function loadDemo(){
     animate();
 }
 
-loadDemo();
+loadScene();
