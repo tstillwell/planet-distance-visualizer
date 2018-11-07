@@ -14,6 +14,8 @@ function loadScene(){
     var mercuryMaterial = new THREE.MeshBasicMaterial( {color: 0x97979F} );
     var mercury = new THREE.Mesh (mercuryGeometry, mercuryMaterial);
     scene.add( sun );
+    scene.add( mercury );
+    mercury.position.set( 100, 0, 0)
     camera.position.z = 100;
     var animate = function () {
         requestAnimationFrame( animate );
