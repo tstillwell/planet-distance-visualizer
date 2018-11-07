@@ -6,9 +6,9 @@ function loadScene(){
     renderer = new THREE.WebGLRenderer();
     renderer.setSize( window.innerWidth, window.innerHeight );
     document.body.appendChild( renderer.domElement );
-    var geometry = new THREE.SphereGeometry( 10, 32, 32 );
-    var material = new THREE.MeshBasicMaterial( {color: 0xFFFF00} );
-    var sun = new THREE.Mesh( geometry, material );
+    var sunGeometry = new THREE.SphereGeometry( 10, 32, 32 );
+    var sunMaterial = new THREE.MeshBasicMaterial( {color: 0xFFFF00} );
+    var sun = new THREE.Mesh( sunGeometry, sunMaterial );
     scene.add( sun );
     camera.position.z = 100;
     var animate = function () {
