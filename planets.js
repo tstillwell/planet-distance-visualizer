@@ -10,6 +10,8 @@ function loadScene(){
     var sunGeometry = new THREE.SphereGeometry( 10, 32, 32 );
     var sunMaterial = new THREE.MeshBasicMaterial( {color: 0xFFFF00} );
     var sun = new THREE.Mesh( sunGeometry, sunMaterial );
+    var mercuryGeometry = new THREE.SphereGeometry( 1, 32, 32);
+    var mercuryMaterial = new THREE.MeshBasicMaterial( {color: 0x97979F} )
     scene.add( sun );
     camera.position.z = 100;
     var animate = function () {
