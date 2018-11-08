@@ -6,6 +6,7 @@ function loadScene(){
     const venusRadius = 6050;
     const earthRadius = 6371;
     const marsRadius = 3390;
+    const jupiterRadius = 69911;
     var scene = new THREE.Scene();
     camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
     controls = new THREE.OrbitControls(camera);
