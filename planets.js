@@ -9,12 +9,12 @@ function loadScene(){
     const jupiterRadius = 69911;
     const saturnRadius = 36184;
     var scene = new THREE.Scene();
-    camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+    camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, near, 10000 );
     controls = new THREE.OrbitControls(camera);
     renderer = new THREE.WebGLRenderer();
     renderer.setSize( window.innerWidth, window.innerHeight );
     document.body.appendChild( renderer.domElement );
-    var sunGeometry = new THREE.SphereGeometry( 100, 32, 32 );
+    var sunGeometry = new THREE.SphereGeometry( 1000, 32, 32 );
     var sunMaterial = new THREE.MeshBasicMaterial( {color: 0xFFFF00} );
     var sun = new THREE.Mesh( sunGeometry, sunMaterial );
     var mercuryGeometry = new THREE.SphereGeometry( 10, 32, 32);
@@ -22,8 +22,8 @@ function loadScene(){
     var mercury = new THREE.Mesh (mercuryGeometry, mercuryMaterial);
     scene.add( sun );
     scene.add( mercury );
-    mercury.position.set( 1000, 0, 0)
-    camera.position.z = 100;
+    mercury.position.set( 10000, 0, 0)
+    camera.position.z = 5000;
     var animate = function () {
         requestAnimationFrame( animate );
         renderer.render( scene, camera );
