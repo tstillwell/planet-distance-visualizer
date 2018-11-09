@@ -3,6 +3,7 @@ function loadScene(){
     const far = 1e10;
     const solarRadius = 695700;
     const mercuryRadius = 2440;
+    const mercuryDistance = 57909050;
     const venusRadius = 6050;
     const earthRadius = 6371;
     const marsRadius = 3390;
