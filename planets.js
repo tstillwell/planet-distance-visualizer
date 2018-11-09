@@ -1,5 +1,5 @@
 function loadScene(){
-    const near = 1;
+    const near = 10000;
     const far = 1e10;
     const solarRadius = 695700;
     const mercuryRadius = 2440;
@@ -24,7 +24,7 @@ function loadScene(){
     scene.add( sun );
     scene.add( mercury );
     mercury.position.set( 10000, 0, 0)
-    camera.position.z = 5000;
+    camera.position.z = 25000;
     var animate = function () {
         requestAnimationFrame( animate );
         renderer.render( scene, camera );
