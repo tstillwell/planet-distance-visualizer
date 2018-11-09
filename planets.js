@@ -7,6 +7,7 @@ function loadScene(){
     const venusRadius = 6050;
     const venusDistance = 108200000;
     const earthRadius = 6371;
+    const earthDistance = 149600000;
     const marsRadius = 3390;
     const jupiterRadius = 69911;
     const saturnRadius = 36184;
