@@ -32,6 +32,7 @@ function loadScene(){
     scene.add( sun );
     scene.add( mercury );
     scene.add( venus );
+    scene.add( earth );
     mercury.position.set( mercuryDistance, 0, 0);
     venus.position.set (venusDistance, 0, 0 );
     camera.position.z = 95000000;
