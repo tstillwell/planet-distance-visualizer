@@ -26,6 +26,7 @@ function loadScene(){
     var venusGeometry = new THREE.SphereGeometry( venusRadius * 2, 32, 32);
     var venusMaterial = new THREE.MeshBasicMaterial( {color: 0xE5E3DB} );
     var venus = new THREE.Mesh (venusGeometry, venusMaterial);
+    var earthGeometry = new THREE.SphereGeometry( earthRadius * 2, 32, 32 );
     scene.add( sun );
     scene.add( mercury );
     scene.add( venus );
