@@ -5,6 +5,7 @@ function loadScene(){
     const mercuryRadius = 2440;
     const mercuryDistance = 57909050;
     const venusRadius = 6050;
+    const venusDistance = 108200000;
     const earthRadius = 6371;
     const marsRadius = 3390;
     const jupiterRadius = 69911;
@@ -18,12 +19,17 @@ function loadScene(){
     var sunGeometry = new THREE.SphereGeometry( solarRadius * 2, 32, 32 );
     var sunMaterial = new THREE.MeshBasicMaterial( {color: 0xFFFF00} );
     var sun = new THREE.Mesh( sunGeometry, sunMaterial );
-    var mercuryGeometry = new THREE.SphereGeometry( mercuryRadius * 20, 32, 32);
+    var mercuryGeometry = new THREE.SphereGeometry( mercuryRadius * 2, 32, 32);
     var mercuryMaterial = new THREE.MeshBasicMaterial( {color: 0x97979F} );
     var mercury = new THREE.Mesh (mercuryGeometry, mercuryMaterial);
+    var venusGeometry = new THREE.SphereGeometry( venusRadius * 2, 32, 32);
+    var venusMaterial = new THREE.MeshBasicMaterial( {color: 0xE5E3DB} );
+    var venus = new THREE.Mesh (venusGeometry, venusMaterial);
     scene.add( sun );
     scene.add( mercury );
-    mercury.position.set( mercuryDistance, 0, 0)
+    scene.add( venus );
+    mercury.position.set( mercuryDistance, 0, 0);
+    venus.position.set (venusDistance, 0, 0 );
     camera.position.z = 95000000;
     var animate = function () {
         requestAnimationFrame( animate );
