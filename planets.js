@@ -28,14 +28,14 @@ function loadScene(){
     var venus = new THREE.Mesh (venusGeometry, venusMaterial);
     var earthGeometry = new THREE.SphereGeometry( earthRadius * 2, 32, 32 );
     var earthMaterial = new THREE.MeshBasicMaterial( {color: 0x00FF00} );
-    var earth = THREE.Mesh (earthGeometry, earthMaterial);
+    var earth = new THREE.Mesh (earthGeometry, earthMaterial);
     scene.add( sun );
     scene.add( mercury );
     scene.add( venus );
     scene.add( earth );
     mercury.position.set( mercuryDistance, 0, 0);
     venus.position.set (venusDistance, 0, 0 );
-    earth.position.set (earthDisetance, 0, 0);
+    earth.position.set (earthDistance, 0, 0);
     camera.position.z = 95000000;
     var animate = function () {
         requestAnimationFrame( animate );
