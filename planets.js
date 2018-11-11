@@ -37,6 +37,7 @@ function loadScene(){
     scene.add( mercury );
     scene.add( venus );
     scene.add( earth );
+    scene.add( mars );
     mercury.position.set( mercuryDistance, 0, 0);
     venus.position.set (venusDistance, 0, 0 );
     earth.position.set (earthDistance, 0, 0);
