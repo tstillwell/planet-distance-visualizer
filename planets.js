@@ -30,6 +30,7 @@ function loadScene(){
     var earthGeometry = new THREE.SphereGeometry( earthRadius * 2, 32, 32 );
     var earthMaterial = new THREE.MeshBasicMaterial( {color: 0x00FF00} );
     var earth = new THREE.Mesh (earthGeometry, earthMaterial);
+    var marsGeometry = new THREE.SphereGeometry( marsRadius * 2, 32, 32);
     scene.add( sun );
     scene.add( mercury );
     scene.add( venus );
