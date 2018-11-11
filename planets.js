@@ -9,6 +9,7 @@ function loadScene(){
     const earthRadius = 6371;
     const earthDistance = 149600000;
     const marsRadius = 3390;
+    const marsDistance = 227900000;
     const jupiterRadius = 69911;
     const saturnRadius = 36184;
     var scene = new THREE.Scene();
