@@ -11,6 +11,7 @@ function loadScene(){
     const marsRadius = 3390;
     const marsDistance = 227900000;
     const jupiterRadius = 69911;
+    const jupiterDistance = 483800000;
     const saturnRadius = 36184;
     var scene = new THREE.Scene();
     camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, near, far );
