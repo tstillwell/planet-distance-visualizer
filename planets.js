@@ -47,6 +47,7 @@ function loadScene(){
     venus.position.set (venusDistance, 0, 0 );
     earth.position.set (earthDistance, 0, 0);
     mars.position.set (marsDistance, 0, 0);
+    jupiter.position.set (jupiterDistance, 0, 0);
     camera.position.z = 95000000;
     var animate = function () {
         requestAnimationFrame( animate );
