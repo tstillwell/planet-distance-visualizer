@@ -44,6 +44,7 @@ function loadScene(){
     var saturnMaterial = new THREE.MeshBasicMaterial( {color: 0xE5E3DB} );
     var saturn = new THREE.Mesh (saturnGeometry, saturnMaterial);
     var uranusGeometry = new THREE.SphereGeometry( uranusRadius * 2, 32, 32);
+    var uranusMaterial = new THREE.MeshBasicMaterial( {color: 0x8DA1AC} );
     scene.add( sun );
     scene.add( mercury );
     scene.add( venus );
