@@ -60,6 +60,7 @@ function loadScene(){
     mars.position.set (marsDistance, 0, 0);
     jupiter.position.set (jupiterDistance, 0, 0);
     saturn.position.set (saturnDistance, 0, 0);
+    uranus.position.set (uranusDistance, 0, 0);
     camera.position.z = 95000000;
     var animate = function () {
         requestAnimationFrame( animate );
