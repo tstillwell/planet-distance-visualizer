@@ -16,6 +16,7 @@ function loadScene(){
     const saturnDistance = 1434000000;
     const uranusRadius = 25362;
     const uranusDistance = 1784000000;
+    const neptuneRadius = 24622;
     var scene = new THREE.Scene();
     camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, near, far );
     controls = new THREE.OrbitControls(camera);
