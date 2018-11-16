@@ -59,6 +59,7 @@ function loadScene(){
     scene.add( jupiter );
     scene.add( saturn );
     scene.add( uranus );
+    scene.add( neptune );
     mercury.position.set( mercuryDistance, 0, 0);
     venus.position.set(venusDistance, 0, 0 );
     earth.position.set(earthDistance, 0, 0);
