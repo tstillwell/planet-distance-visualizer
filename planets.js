@@ -75,4 +75,5 @@ function loadScene(){
     animate();
 }
 
+// TODO: implement function for repeated code
 loadScene();
