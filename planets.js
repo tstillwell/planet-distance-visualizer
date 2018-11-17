@@ -76,7 +76,7 @@ function loadScene(){
     animate();
 }
 
-// TODO: implement function for repeated code
+
 function planetMeshFactory(){ // Give mesh for each planet
 }
 
