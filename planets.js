@@ -1,5 +1,5 @@
 function loadScene(){
-    const near = 100;
+    const NEAR = 100;
     const far = 1e10;
     const solarRadius = 695700;
     const mercuryRadius = 2440;
@@ -19,7 +19,7 @@ function loadScene(){
     const neptuneRadius = 24622;
     const neptuneDistance = 4495000000;
     var scene = new THREE.Scene();
-    camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, near, far );
+    camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, NEAR, far );
     controls = new THREE.OrbitControls(camera);
     renderer = new THREE.WebGLRenderer();
     renderer.setSize( window.innerWidth, window.innerHeight );
@@ -78,6 +78,7 @@ function loadScene(){
 
 
 function planetMeshFactory(){ // Give mesh for each planet
+    
 }
 
 loadScene();
