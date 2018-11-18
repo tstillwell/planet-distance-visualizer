@@ -78,7 +78,7 @@ function loadScene(){
 
 
 function planetMeshFactory(preMeshData){ // Give mesh for each planet
-    
+    let preMeshData = planetMesh;
 }
 
 loadScene();
