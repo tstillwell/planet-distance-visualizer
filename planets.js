@@ -1,6 +1,6 @@
 function loadScene(){
     const NEAR = 100;
-    const far = 1e10;
+    const FAR = 1e10;
     const solarRadius = 695700;
     const mercuryRadius = 2440;
     const mercuryDistance = 57909050;
@@ -19,7 +19,7 @@ function loadScene(){
     const neptuneRadius = 24622;
     const neptuneDistance = 4495000000;
     var scene = new THREE.Scene();
-    camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, NEAR, far );
+    camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, NEAR, FAR );
     controls = new THREE.OrbitControls(camera);
     renderer = new THREE.WebGLRenderer();
     renderer.setSize( window.innerWidth, window.innerHeight );
