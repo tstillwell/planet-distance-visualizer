@@ -49,7 +49,7 @@ function loadScene(){
     var uranusMaterial = new THREE.MeshBasicMaterial( {color: 0x8DA1AC} );
     var uranus = new THREE.Mesh (uranusGeometry, uranusMaterial);
     var neptuneGeometry = new THREE.SphereGeometry( neptuneRadius * 2, 32, 32);
-    var neptuneMaterial = new THREE.MeshBasicMaterial( {color: 0x44667f} );
+    var neptuneMaterial = new THREE.MeshBasicMaterial( {color: 0x44667F} );
     var neptune = new THREE.Mesh (neptuneGeometry, neptuneMaterial);
     scene.add(sun);
     scene.add(mercury);
