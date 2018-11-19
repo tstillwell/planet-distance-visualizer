@@ -82,6 +82,7 @@ function planetMeshFactory(preMeshData){ // Give mesh for each planet
     var radius;
     var distance;
     var geometry;
+    var material;
     return planetMesh;
 }
 
