@@ -81,7 +81,7 @@ function planetMeshFactory(preMeshData){ // Give mesh for each planet
     let planetMesh = preMeshData;
     var radius = planetMesh.radius;
     var distance = planetMesh.distance;
-    var geometry;
+    var geometry = planetMesh.geometry;
     var material;
     var scene;
     return planetMesh;
