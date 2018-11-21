@@ -87,6 +87,7 @@ function planetMeshFactory(preMeshData){ // Give mesh for each planet
     let scene = planetMesh.scene;
     var planet;
     scene.add(planet);
+    planet.position.set(distance, 0, 0);
     return planetMesh;
 }
 
