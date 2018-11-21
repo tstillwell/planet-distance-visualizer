@@ -85,6 +85,8 @@ function planetMeshFactory(preMeshData){ // Give mesh for each planet
     let geometry = new THREE.SphereGeometry( radius * 2, 32, 32);
     let material = new THREE.MeshBasicMaterial( {color: texture} );
     let scene = planetMesh.scene;
+    var planet;
+    scene.add(planet);
     return planetMesh;
 }
 
