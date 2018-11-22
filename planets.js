@@ -77,7 +77,7 @@ function loadScene(){
 }
 
 
-function planetMeshFactory(preMeshData, scene){ // Give mesh for each planet
+function planetMeshFactory(preMeshData){ // Give mesh for each planet
     let planetMesh = preMeshData;
     let radius = planetMesh.radius;
     let texture = preMeshData.texture;
