@@ -24,9 +24,8 @@ function loadScene(){
     renderer = new THREE.WebGLRenderer();
     renderer.setSize( window.innerWidth, window.innerHeight );
     document.body.appendChild( renderer.domElement );
-    let sunGeometry = new THREE.SphereGeometry( solarRadius * 2, 32, 32 );
-    let sunMaterial = new THREE.MeshBasicMaterial( {color: 0xFFFF00} );
-    let sun = new THREE.Mesh( sunGeometry, sunMaterial );
+    let sunData = {radius: solarRadius, texture: 0xFFFF00};
+    let sun = planetMeshFactory(sunData);
     let mercuryGeometry = new THREE.SphereGeometry( mercuryRadius * 2, 32, 32);
     let mercuryMaterial = new THREE.MeshBasicMaterial( {color: 0x97979F} );
     let mercury = new THREE.Mesh (mercuryGeometry, mercuryMaterial);
