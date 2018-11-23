@@ -26,9 +26,8 @@ function loadScene(){
     document.body.appendChild( renderer.domElement );
     let sunData = {radius: solarRadius, texture: 0xFFFF00};
     let sun = planetMeshFactory(sunData);
-    let mercuryGeometry = new THREE.SphereGeometry( mercuryRadius * 2, 32, 32);
-    let mercuryMaterial = new THREE.MeshBasicMaterial( {color: 0x97979F} );
-    let mercury = new THREE.Mesh (mercuryGeometry, mercuryMaterial);
+    let mercuryData = {radius: mercuryRadius, texture: 0x97979F};
+    let mercury = planetMeshFactory(mercuryData);
     let venusGeometry = new THREE.SphereGeometry( venusRadius * 2, 32, 32);
     let venusMaterial = new THREE.MeshBasicMaterial( {color: 0xE5E3DB} );
     let venus = new THREE.Mesh (venusGeometry, venusMaterial);
