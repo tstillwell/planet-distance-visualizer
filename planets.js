@@ -28,9 +28,8 @@ function loadScene(){
     let sun = planetMeshFactory(sunData);
     let mercuryData = {radius: mercuryRadius, texture: 0x97979F};
     let mercury = planetMeshFactory(mercuryData);
-    let venusGeometry = new THREE.SphereGeometry( venusRadius * 2, 32, 32);
-    let venusMaterial = new THREE.MeshBasicMaterial( {color: 0xE5E3DB} );
-    let venus = new THREE.Mesh (venusGeometry, venusMaterial);
+    let venusData = {radius: venusRadius, texture: 0xE5E3DB};
+    let venus = planetMeshFactory(venusData);
     let earthGeometry = new THREE.SphereGeometry( earthRadius * 2, 32, 32 );
     let earthMaterial = new THREE.MeshBasicMaterial( {color: 0x00FF00} );
     let earth = new THREE.Mesh (earthGeometry, earthMaterial);
