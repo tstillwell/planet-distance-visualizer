@@ -32,9 +32,8 @@ function loadScene(){
     let venus = planetMeshFactory(venusData);
     let earthData = {radius: earthRadius, texture: 0x00FF00};
     let earth = planetMeshFactory(earthData);
-    let marsGeometry = new THREE.SphereGeometry( marsRadius * 2, 32, 32);
-    let marsMaterial = new THREE.MeshBasicMaterial( {color: 0xFF0000} );
-    let mars = new THREE.Mesh (marsGeometry, marsMaterial);
+    let marsData = {radius: marsRadius, texture: 0xFF0000};
+    let mars = planetMeshFactory(marsData);
     let jupiterGeometry = new THREE.SphereGeometry( jupiterRadius * 2, 32, 32);
     let jupiterMaterial = new THREE.MeshBasicMaterial( {color: 0xE3DCCB} );
     let jupiter = new THREE.Mesh (jupiterGeometry, jupiterMaterial);
