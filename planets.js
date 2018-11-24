@@ -38,9 +38,8 @@ function loadScene(){
     let jupiter = planetMeshFactory(jupiterData);
     let saturnData = {radius: saturnRadius, texture: 0xE5E3DB};
     let saturn = planetMeshFactory(saturnData);
-    let uranusGeometry = new THREE.SphereGeometry( uranusRadius * 2, 32, 32);
-    let uranusMaterial = new THREE.MeshBasicMaterial( {color: 0x8DA1AC} );
-    let uranus = new THREE.Mesh (uranusGeometry, uranusMaterial);
+    let uranusData = {radius: uranusRadius, texture: 0x8DA1AC};
+    let uranus = planetMeshFactory(uranusData);
     let neptuneGeometry = new THREE.SphereGeometry( neptuneRadius * 2, 32, 32);
     let neptuneMaterial = new THREE.MeshBasicMaterial( {color: 0x44667F} );
     let neptune = new THREE.Mesh (neptuneGeometry, neptuneMaterial);
