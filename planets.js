@@ -69,8 +69,7 @@ function loadScene(){
 
 
 function planetMeshFactory(preMeshData){ // Give mesh for each planet
-    let planetMesh = preMeshData;
-    let radius = planetMesh.radius;
+    let radius = preMeshData.radius;
     let texture = preMeshData.texture;
     let geometry = new THREE.SphereGeometry( radius * 2, 32, 32);
     let material = new THREE.MeshBasicMaterial( {color: texture} );
