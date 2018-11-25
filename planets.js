@@ -42,14 +42,13 @@ function loadScene(){
     let neptune = planetMeshFactory(neptuneData);
     positionInSpace(scene, sun, 0);
     positionInSpace(scene, mercury, mercuryDistance);
-    scene.add(venus);
+    positionInSpace(scene, venus, venusDistance);
     scene.add(earth);
     scene.add(mars);
     scene.add(jupiter);
     scene.add(saturn);
     scene.add(uranus);
     scene.add(neptune);
-    venus.position.set(venusDistance, 0, 0 );
     earth.position.set(earthDistance, 0, 0);
     mars.position.set(marsDistance, 0, 0);
     jupiter.position.set(jupiterDistance, 0, 0);
