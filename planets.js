@@ -75,4 +75,7 @@ function planetMeshFactory(preMeshData){ // Give mesh for each planet
     return planet;
 }
 
+function positionInSpace(planet){
+}
+
 loadScene();
