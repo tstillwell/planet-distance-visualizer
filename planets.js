@@ -40,7 +40,7 @@ function loadScene(){
     let uranus = planetMeshFactory(uranusData);
     let neptuneData = {radius: neptuneRadius, texture: 0x44667F};
     let neptune = planetMeshFactory(neptuneData);
-    scene.add(sun);
+    positionInSpace(scene, sun, 0);
     scene.add(mercury);
     scene.add(venus);
     scene.add(earth);
