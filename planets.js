@@ -43,13 +43,12 @@ function loadScene(){
     positionInSpace(scene, sun, 0);
     positionInSpace(scene, mercury, mercuryDistance);
     positionInSpace(scene, venus, venusDistance);
-    scene.add(earth);
+    positionInSpace(scene, earth, earthDistance);
     scene.add(mars);
     scene.add(jupiter);
     scene.add(saturn);
     scene.add(uranus);
     scene.add(neptune);
-    earth.position.set(earthDistance, 0, 0);
     mars.position.set(marsDistance, 0, 0);
     jupiter.position.set(jupiterDistance, 0, 0);
     saturn.position.set(saturnDistance, 0, 0);
