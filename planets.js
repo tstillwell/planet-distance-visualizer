@@ -72,4 +72,7 @@ function positionInSpace(scene, planet, distance){ // add planet to model
     planet.position.set(distance, 0, 0);
 }
 
+function positionAllInSpace(scene, planets_data){ // add all planets to model
+}
+
 loadScene();
