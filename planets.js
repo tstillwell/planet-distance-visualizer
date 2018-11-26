@@ -48,8 +48,7 @@ function loadScene(){
     positionInSpace(scene, jupiter, jupiterDistance);
     positionInSpace(scene, saturn, saturnDistance);
     positionInSpace(scene, uranus, uranusDistance);
-    scene.add(neptune);
-    neptune.position.set(neptuneDistance, 0, 0);
+    positionInSpace(scene, neptune, neptuneDistance);
     camera.position.z = 95000000;
     let animate = function () {
         requestAnimationFrame( animate );
