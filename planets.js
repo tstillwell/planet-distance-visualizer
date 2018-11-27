@@ -51,15 +51,7 @@ function loadScene(){
         [uranus, uranusDistance],
         [neptune, neptuneDistance]
     ];
-    positionInSpace(scene, sun, 0);
-    positionInSpace(scene, mercury, mercuryDistance);
-    positionInSpace(scene, venus, venusDistance);
-    positionInSpace(scene, earth, earthDistance);
-    positionInSpace(scene, mars, marsDistance);
-    positionInSpace(scene, jupiter, jupiterDistance);
-    positionInSpace(scene, saturn, saturnDistance);
-    positionInSpace(scene, uranus, uranusDistance);
-    positionInSpace(scene, neptune, neptuneDistance);
+    positionAllInSpace(scene, model_data);
     camera.position.z = 95000000;
     let animate = function () {
         requestAnimationFrame( animate );
