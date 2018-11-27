@@ -40,6 +40,17 @@ function loadScene(){
     let uranus = planetMeshFactory(uranusData);
     let neptuneData = {radius: neptuneRadius, texture: 0x44667F};
     let neptune = planetMeshFactory(neptuneData);
+    let model_data = [
+        [sun, 0],
+        [mercury, mercuryDistance],
+        [venus, venusDistance],
+        [earth, earthDistance],
+        [mars, marsDistance],
+        [jupiter, jupiterDistance],
+        [saturn, saturnDistance],
+        [uranus, uranusDistance],
+        [neptune, neptuneDistance]
+    ];
     positionInSpace(scene, sun, 0);
     positionInSpace(scene, mercury, mercuryDistance);
     positionInSpace(scene, venus, venusDistance);
@@ -73,6 +84,7 @@ function positionInSpace(scene, planet, distance){ // add planet to model
 }
 
 function positionAllInSpace(scene, planets_data){ // add all planets to model
+    
 }
 
 loadScene();
