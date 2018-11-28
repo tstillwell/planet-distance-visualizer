@@ -24,8 +24,7 @@ function loadScene(){
     document.body.appendChild( renderer.domElement );
     let sun = planetMeshFactory({radius: solarRadius, texture: 0xFFFF00});
     let mercury = planetMeshFactory({radius: mercuryRadius, texture: 0x97979F});
-    let venusData = {radius: venusRadius, texture: 0xE5E3DB};
-    let venus = planetMeshFactory(venusData);
+    let venus = planetMeshFactory({radius: venusRadius, texture: 0xE5E3DB});
     let earthData = {radius: earthRadius, texture: 0x00FF00};
     let earth = planetMeshFactory(earthData);
     let marsData = {radius: marsRadius, texture: 0xFF0000};
