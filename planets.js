@@ -22,8 +22,7 @@ function loadScene(){
     renderer = new THREE.WebGLRenderer();
     renderer.setSize( window.innerWidth, window.innerHeight );
     document.body.appendChild( renderer.domElement );
-    let sunData = {radius: solarRadius, texture: 0xFFFF00};
-    let sun = planetMeshFactory(sunData);
+    let sun = planetMeshFactory({radius: solarRadius, texture: 0xFFFF00});
     let mercuryData = {radius: mercuryRadius, texture: 0x97979F};
     let mercury = planetMeshFactory(mercuryData);
     let venusData = {radius: venusRadius, texture: 0xE5E3DB};
