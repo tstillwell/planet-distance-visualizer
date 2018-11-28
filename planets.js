@@ -25,8 +25,7 @@ function loadScene(){
     let sun = planetMeshFactory({radius: solarRadius, texture: 0xFFFF00});
     let mercury = planetMeshFactory({radius: mercuryRadius, texture: 0x97979F});
     let venus = planetMeshFactory({radius: venusRadius, texture: 0xE5E3DB});
-    let earthData = {radius: earthRadius, texture: 0x00FF00};
-    let earth = planetMeshFactory(earthData);
+    let earth = planetMeshFactory({radius: earthRadius, texture: 0x00FF00});
     let marsData = {radius: marsRadius, texture: 0xFF0000};
     let mars = planetMeshFactory(marsData);
     let jupiterData = {radius: jupiterRadius, texture: 0xE3DCCB};
