@@ -29,8 +29,7 @@ function loadScene(){
     let mars = planetMeshFactory({radius: marsRadius, texture: 0xFF0000});
     let jupiter = planetMeshFactory({radius: jupiterRadius, texture: 0xE3DCCB});
     let saturn = planetMeshFactory({radius: saturnRadius, texture: 0xE5E3DB};
-    let uranusData = {radius: uranusRadius, texture: 0x8DA1AC};
-    let uranus = planetMeshFactory(uranusData);
+    let uranus = planetMeshFactory({radius: uranusRadius, texture: 0x8DA1AC});
     let neptuneData = {radius: neptuneRadius, texture: 0x44667F};
     let neptune = planetMeshFactory(neptuneData);
     let model_data = [
