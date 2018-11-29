@@ -61,10 +61,6 @@ function planetMeshFactory(preMeshData){ // Give mesh for each planet
     return planet;
 }
 
-function positionInSpace(scene, planet, distance){ // add planet to model
-    scene.add(planet);
-    planet.position.set(distance, 0, 0);
-}
 
 function positionAllInSpace(scene, planets_data){ // add all planets to model
     planets_data.forEach(function(distance_data){
