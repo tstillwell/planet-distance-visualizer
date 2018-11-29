@@ -2,7 +2,6 @@ function loadScene(){
     const solarRadius = 695700;
     const mercuryRadius = 2440;
     const venusRadius = 6050;
-    const venusDistance = 108200000;
     const earthRadius = 6371;
     const earthDistance = 149600000;
     const marsRadius = 3390;
@@ -33,7 +32,7 @@ function loadScene(){
     let model_data = [
         {id: sun, distance: 0},
         {id: mercury, distance: 57909050},
-        {id: venus, distance: venusDistance},
+        {id: venus, distance: 108200000},
         {id: earth, distance: earthDistance},
         {id: mars, distance: marsDistance},
         {id: jupiter, distance: jupiterDistance},
