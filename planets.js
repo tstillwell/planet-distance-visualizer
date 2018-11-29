@@ -1,7 +1,6 @@
 function loadScene(){
     const solarRadius = 695700;
     const mercuryRadius = 2440;
-    const mercuryDistance = 57909050;
     const venusRadius = 6050;
     const venusDistance = 108200000;
     const earthRadius = 6371;
@@ -33,7 +32,7 @@ function loadScene(){
     let neptune = planetMeshFactory({radius: neptuneRadius, texture: 0x44667F});
     let model_data = [
         {id: sun, distance: 0},
-        {id: mercury, distance: mercuryDistance},
+        {id: mercury, distance: 57909050},
         {id: venus, distance: venusDistance},
         {id: earth, distance: earthDistance},
         {id: mars, distance: marsDistance},
