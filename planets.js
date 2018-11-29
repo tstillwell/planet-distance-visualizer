@@ -32,15 +32,15 @@ function loadScene(){
     let uranus = planetMeshFactory({radius: uranusRadius, texture: 0x8DA1AC});
     let neptune = planetMeshFactory({radius: neptuneRadius, texture: 0x44667F});
     let model_data = [
-        [sun, 0],
-        [mercury, mercuryDistance],
-        [venus, venusDistance],
-        [earth, earthDistance],
-        [mars, marsDistance],
-        [jupiter, jupiterDistance],
-        [saturn, saturnDistance],
-        [uranus, uranusDistance],
-        [neptune, neptuneDistance]
+        {id: sun, distance: 0},
+        {id: mercury, distance: mercuryDistance},
+        {id: venus, distance: venusDistance},
+        {id: earth, distance: earthDistance},
+        {id: mars, distance: marsDistance},
+        {id: jupiter, distance: jupiterDistance},
+        {id: saturn, distance: saturnDistance},
+        {id: uranus, distance: uranusDistance},
+        {id: neptune, distance: neptuneDistance}
     ];
     positionAllInSpace(scene, model_data);
     camera.position.z = 95000000;
@@ -64,8 +64,8 @@ function planetMeshFactory(preMeshData){ // Give mesh for each planet
 
 function positionAllInSpace(scene, planets_data){ // add all planets to model
     planets_data.forEach(function(distance_data){
-        let bodyname = distance_data[0];
-        let distance = distance_data[1];
+        let bodyname = distance_data.id;
+        let distance = distance_data.distance;
         scene.add(bodyname);
         bodyname.position.set(distance, 0, 0);
     });
