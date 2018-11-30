@@ -7,7 +7,6 @@ function loadScene(){
     const jupiterRadius = 69911;
     const saturnRadius = 36184;
     const uranusRadius = 25362;
-    const uranusDistance = 1784000000;
     const neptuneRadius = 24622;
     const neptuneDistance = 4495000000;
     let scene = new THREE.Scene();
@@ -33,7 +32,7 @@ function loadScene(){
         {id: mars, distance: 227900000},
         {id: jupiter, distance: 483800000},
         {id: saturn, distance: 1434000000},
-        {id: uranus, distance: uranusDistance},
+        {id: uranus, distance: 1784000000},
         {id: neptune, distance: neptuneDistance}
     ];
     positionAllInSpace(scene, model_data);
