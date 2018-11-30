@@ -5,7 +5,6 @@ function loadScene(){
     const earthRadius = 6371;
     const marsRadius = 3390;
     const jupiterRadius = 69911;
-    const jupiterDistance = 483800000;
     const saturnRadius = 36184;
     const saturnDistance = 1434000000;
     const uranusRadius = 25362;
@@ -33,7 +32,7 @@ function loadScene(){
         {id: venus, distance: 108200000},
         {id: earth, distance: 149600000},
         {id: mars, distance: 227900000},
-        {id: jupiter, distance: jupiterDistance},
+        {id: jupiter, distance: 483800000},
         {id: saturn, distance: saturnDistance},
         {id: uranus, distance: uranusDistance},
         {id: neptune, distance: neptuneDistance}
