@@ -8,7 +8,6 @@ function loadScene(){
     const saturnRadius = 36184;
     const uranusRadius = 25362;
     const neptuneRadius = 24622;
-    const neptuneDistance = 4495000000;
     let scene = new THREE.Scene();
     camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 100, 1e10 );
     controls = new THREE.OrbitControls(camera);
@@ -33,7 +32,7 @@ function loadScene(){
         {id: jupiter, distance: 483800000},
         {id: saturn, distance: 1434000000},
         {id: uranus, distance: 1784000000},
-        {id: neptune, distance: neptuneDistance}
+        {id: neptune, distance: 4495000000}
     ];
     positionAllInSpace(scene, model_data);
     camera.position.z = 95000000;
