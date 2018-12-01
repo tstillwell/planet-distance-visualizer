@@ -1,5 +1,4 @@
 function loadScene(){
-    const marsRadius = 3390;
     const jupiterRadius = 69911;
     const saturnRadius = 36184;
     const uranusRadius = 25362;
@@ -14,7 +13,7 @@ function loadScene(){
     let mercury = planetMeshFactory({radius: 2440, texture: 0x97979F});
     let venus = planetMeshFactory({radius: 6050, texture: 0xE5E3DB});
     let earth = planetMeshFactory({radius: 6371, texture: 0x00FF00});
-    let mars = planetMeshFactory({radius: marsRadius, texture: 0xFF0000});
+    let mars = planetMeshFactory({radius: 3390, texture: 0xFF0000});
     let jupiter = planetMeshFactory({radius: jupiterRadius, texture: 0xE3DCCB});
     let saturn = planetMeshFactory({radius: saturnRadius, texture: 0xE5E3DB});
     let uranus = planetMeshFactory({radius: uranusRadius, texture: 0x8DA1AC});
