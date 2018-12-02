@@ -14,7 +14,7 @@ function loadScene(){
     let saturn = planetMeshFactory({radius: 36184, texture: 0xE5E3DB});
     let uranus = planetMeshFactory({radius: 25362, texture: 0x8DA1AC});
     let neptune = planetMeshFactory({radius: 24622, texture: 0x44667F});
-    let model_data = [
+    let distance_data = [
         {id: sun, distance: 0},
         {id: mercury, distance: 57909050},
         {id: venus, distance: 108200000},
@@ -25,7 +25,7 @@ function loadScene(){
         {id: uranus, distance: 1784000000},
         {id: neptune, distance: 4495000000}
     ];
-    positionAllInSpace(scene, model_data);
+    positionAllInSpace(scene, distance_data);
     camera.position.z = 95000000;
     let animate = function () {
         requestAnimationFrame( animate );
