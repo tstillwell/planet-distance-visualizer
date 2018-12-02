@@ -1,5 +1,4 @@
 function loadScene(){
-    const saturnRadius = 36184;
     const uranusRadius = 25362;
     const neptuneRadius = 24622;
     let scene = new THREE.Scene();
@@ -14,7 +13,7 @@ function loadScene(){
     let earth = planetMeshFactory({radius: 6371, texture: 0x00FF00});
     let mars = planetMeshFactory({radius: 3390, texture: 0xFF0000});
     let jupiter = planetMeshFactory({radius: 69911, texture: 0xE3DCCB});
-    let saturn = planetMeshFactory({radius: saturnRadius, texture: 0xE5E3DB});
+    let saturn = planetMeshFactory({radius: 36184, texture: 0xE5E3DB});
     let uranus = planetMeshFactory({radius: uranusRadius, texture: 0x8DA1AC});
     let neptune = planetMeshFactory({radius: neptuneRadius, texture: 0x44667F});
     let model_data = [
