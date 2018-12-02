@@ -1,5 +1,4 @@
 function loadScene(){
-    const neptuneRadius = 24622;
     let scene = new THREE.Scene();
     camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 100, 1e10 );
     controls = new THREE.OrbitControls(camera);
@@ -14,7 +13,7 @@ function loadScene(){
     let jupiter = planetMeshFactory({radius: 69911, texture: 0xE3DCCB});
     let saturn = planetMeshFactory({radius: 36184, texture: 0xE5E3DB});
     let uranus = planetMeshFactory({radius: 25362, texture: 0x8DA1AC});
-    let neptune = planetMeshFactory({radius: neptuneRadius, texture: 0x44667F});
+    let neptune = planetMeshFactory({radius: 24622, texture: 0x44667F});
     let model_data = [
         {id: sun, distance: 0},
         {id: mercury, distance: 57909050},
