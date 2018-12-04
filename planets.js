@@ -49,6 +49,7 @@ function orbitRingFactory(distance){ // Make ring representing orbit
     let geometry = new THREE.RingGeometry( distance, distance + 1000000, 100 );
     let material = new THREE.MeshBasicMaterial( { color: 0x00FFFF, side: THREE.DoubleSide } );
     let ring = new THREE.Mesh( geometry, material );
+    return ring;
 }
 
 
