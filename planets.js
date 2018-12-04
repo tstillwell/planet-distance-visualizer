@@ -1,6 +1,6 @@
 function loadScene(){
     let scene = new THREE.Scene();
-    camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 100, 1e10 );
+    camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 100, 1e15 );
     controls = new THREE.OrbitControls(camera);
     renderer = new THREE.WebGLRenderer();
     renderer.setSize( window.innerWidth, window.innerHeight );
@@ -45,7 +45,8 @@ function planetMeshFactory(preMeshData){ // Give mesh for each planet
 }
 
 
-function orbitRingFactory(){ // Make ring representing orbit
+function orbitRingFactory(distance){ // Make ring representing orbit
+    let geometry = new THREE.RingGeometry( distance, distance + 1000000, 100 );
 }
 
 
