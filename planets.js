@@ -26,7 +26,7 @@ function loadScene(){
         {id: neptune, distance: 4495000000}
     ];
     positionAllInSpace(scene, distance_data);
-    camera.position.z = 25000000;
+    camera.position.z = 250000000;
     let animate = function () {
         requestAnimationFrame( animate );
         renderer.render( scene, camera );
