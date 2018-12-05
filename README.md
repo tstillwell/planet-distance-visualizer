@@ -7,4 +7,4 @@ Visualizes interplanetary space
 using idealized circular orbits.
 
 ## Usage
-open planets.html in a web browser
+open `planets.html` in a web browser
