@@ -1,6 +1,6 @@
 # Planetary distance visualizer
 
-Simple model of our solar system
+Webapp model of our solar system
 built with javascript using Three.js
 
 Visualizes interplanetary space
