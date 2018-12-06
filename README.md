@@ -3,7 +3,7 @@
 Webapp model of our solar system
 built with javascript using Three.js
 
-Visualizes interplanetary space
+Visualizes the scale of interplanetary space
 using idealized circular orbits.
 
 ## Usage
