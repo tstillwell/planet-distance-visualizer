@@ -58,7 +58,7 @@ function positionAllInSpace(scene, planets_data){ // add all planets to model
         let bodyname = distance_data.id;
         let distance = distance_data.distance;
         let ring = orbitRingFactory(distance);
-        if (distance != 0){ // dont add ring for sun
+        if (distance !== 0){ // dont add ring for sun
           scene.add(ring);
         }
         scene.add(bodyname);
