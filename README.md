@@ -7,4 +7,7 @@ Visualizes interplanetary space
 using idealized circular orbits.
 
 ## Usage
-open `planets.html` in a web browser
+
+Clone or download this repo
+
+Open `planets.html` in a web browser
