@@ -2,7 +2,7 @@ function loadScene(){
     let scene = new THREE.Scene();
     let camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 100, 1e15 );
     let controls = new THREE.OrbitControls(camera);
-    renderer = new THREE.WebGLRenderer();
+    let renderer = new THREE.WebGLRenderer();
     renderer.setSize( window.innerWidth, window.innerHeight );
     document.body.appendChild( renderer.domElement );
     let sun = planetMeshFactory({radius: 695700, texture: 0xFFFF00});
