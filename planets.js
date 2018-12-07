@@ -1,4 +1,4 @@
-function loadScene(){
+(function loadScene(){
     let scene = new THREE.Scene();
     let camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 100, 1e15 );
     let controls = new THREE.OrbitControls(camera);
@@ -32,7 +32,7 @@ function loadScene(){
         renderer.render( scene, camera );
     };
     animate();
-}
+})();
 
 
 function planetMesh(preMeshData){ // Give mesh for each planet
@@ -65,5 +65,3 @@ function positionAllInSpace(scene, planets_data){ // add all planets to model
         bodyname.position.set(distance, 0, 0);
     });
 }
-
-loadScene();
