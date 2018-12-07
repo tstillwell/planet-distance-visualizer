@@ -14,7 +14,7 @@ function loadScene(){
     let saturn = planetMeshFactory({radius: 36184, texture: 0xE5E3DB});
     let uranus = planetMeshFactory({radius: 25362, texture: 0x8DA1AC});
     let neptune = planetMeshFactory({radius: 24622, texture: 0x44667F});
-    let distance_data = [
+    let distance_data = [ // distance from sun in km
         {id: sun, distance: 0},
         {id: mercury, distance: 57909050},
         {id: venus, distance: 108200000},
