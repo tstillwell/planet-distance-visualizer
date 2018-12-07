@@ -7,6 +7,9 @@ Visualizes the scale of interplanetary space
 using idealized circular orbits for each of the
 8 planets.
 
+Orbits are not realistic.
+
+
 ## Usage
 
 Clone or download this repo
