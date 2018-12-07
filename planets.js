@@ -5,15 +5,15 @@ function loadScene(){
     let renderer = new THREE.WebGLRenderer();
     renderer.setSize( window.innerWidth, window.innerHeight );
     document.body.appendChild( renderer.domElement );
-    let sun = planetMeshFactory({radius: 695700, texture: 0xFFFF00});
-    let mercury = planetMeshFactory({radius: 2440, texture: 0x97979F});
-    let venus = planetMeshFactory({radius: 6050, texture: 0xE5E3DB});
-    let earth = planetMeshFactory({radius: 6371, texture: 0x00FF00});
-    let mars = planetMeshFactory({radius: 3390, texture: 0xFF0000});
-    let jupiter = planetMeshFactory({radius: 69911, texture: 0xE3DCCB});
-    let saturn = planetMeshFactory({radius: 36184, texture: 0xE5E3DB});
-    let uranus = planetMeshFactory({radius: 25362, texture: 0x8DA1AC});
-    let neptune = planetMeshFactory({radius: 24622, texture: 0x44667F});
+    let sun = planetMesh({radius: 695700, texture: 0xFFFF00});
+    let mercury = planetMesh({radius: 2440, texture: 0x97979F});
+    let venus = planetMesh({radius: 6050, texture: 0xE5E3DB});
+    let earth = planetMesh({radius: 6371, texture: 0x00FF00});
+    let mars = planetMesh({radius: 3390, texture: 0xFF0000});
+    let jupiter = planetMesh({radius: 69911, texture: 0xE3DCCB});
+    let saturn = planetMesh({radius: 36184, texture: 0xE5E3DB});
+    let uranus = planetMesh({radius: 25362, texture: 0x8DA1AC});
+    let neptune = planetMesh({radius: 24622, texture: 0x44667F});
     let distance_data = [ // distance from sun in km
         {id: sun, distance: 0},
         {id: mercury, distance: 57909050},
@@ -35,7 +35,7 @@ function loadScene(){
 }
 
 
-function planetMeshFactory(preMeshData){ // Give mesh for each planet
+function planetMesh(preMeshData){ // Give mesh for each planet
     let radius = preMeshData.radius;
     let texture = preMeshData.texture;
     let geometry = new THREE.SphereGeometry( radius * 2, 32, 32);
