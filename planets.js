@@ -66,3 +66,6 @@ function positionAllInSpace(scene, planets_data){ // add all planets to model
         bodyname.position.set(distance, 0, 0);
     });
 }
+
+function addOverlayListeners(){
+}
