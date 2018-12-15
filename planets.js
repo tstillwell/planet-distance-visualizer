@@ -27,6 +27,7 @@
         {id: neptune, distance: 4495000000}
     ];
     positionAllInSpace(scene, distance_data);
+    addOverlayListeners();
     camera.position.z = 250000000;
     let animate = function () {
         requestAnimationFrame( animate );
