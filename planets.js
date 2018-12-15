@@ -78,3 +78,6 @@ function addOverlayListeners(){
     document.querySelector("#neptune-select").addEventListener("click", selectPlanet);
 }
 
+function selectPlanet(planetName){
+
+}
