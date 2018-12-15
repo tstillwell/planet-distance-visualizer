@@ -72,5 +72,6 @@ function addOverlayListeners(){
     document.querySelector("#venus-select").addEventListener("click", selectPlanet);
     document.querySelector("#earth-select").addEventListener("click", selectPlanet);
     document.querySelector("#mars-select").addEventListener("click", selectPlanet);
+    document.querySelector("#jupiter-select").addEventListener("click", selectPlanet);
 }
 
