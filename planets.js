@@ -79,6 +79,6 @@ function addOverlayListeners(){
     document.querySelector("#neptune-select").addEventListener("click", selectPlanet);
 }
 
-function selectPlanet(planetName){
-
+function selectPlanet(planetName){  // fired on clicking planet in overlay
+    
 }
