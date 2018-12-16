@@ -27,7 +27,7 @@
         {id: neptune, distance: 4495000000}
     ];
     positionAllInSpace(scene, distance_data);
-    addOverlayListeners();
+    addOverlayListeners(scene);
     camera.position.z = 250000000;
     let animate = function () {
         requestAnimationFrame( animate );
@@ -68,7 +68,7 @@ function positionAllInSpace(scene, planets_data){ // add all planets to model
     });
 }
 
-function addOverlayListeners(){
+function addOverlayListeners(scene){
     document.querySelector("#mercury-select").addEventListener("click", selectPlanet);
     document.querySelector("#venus-select").addEventListener("click", selectPlanet);
     document.querySelector("#earth-select").addEventListener("click", selectPlanet);
