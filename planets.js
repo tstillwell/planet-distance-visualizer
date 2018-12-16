@@ -6,7 +6,7 @@
     let renderer = new THREE.WebGLRenderer(renderConfig);
     renderer.setSize( window.innerWidth, window.innerHeight );
     document.body.appendChild( renderer.domElement );
-    let sun = planetMesh({radius: 695700, texture: 0xFFFF00});
+    let sun = planetMesh({radius: 695700, texture: 0xFFFF00, name: "sun"});
     let mercury = planetMesh({radius: 2440, texture: 0x97979F});
     let venus = planetMesh({radius: 6050, texture: 0xE5E3DB});
     let earth = planetMesh({radius: 6371, texture: 0x00FF00});
