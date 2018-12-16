@@ -40,9 +40,11 @@
 function planetMesh(preMeshData){ // Give mesh for each planet
     let radius = preMeshData.radius;
     let texture = preMeshData.texture;
+    let name = preMeshData.name;
     let geometry = new THREE.SphereGeometry( radius * 2, 32, 32);
     let material = new THREE.MeshBasicMaterial( {color: texture} );
     let planet = new THREE.Mesh(geometry, material);
+    planet.name = name;
     return planet;
 }
 
@@ -69,6 +71,7 @@ function positionAllInSpace(scene, planets_data){ // add all planets to model
 }
 
 function addOverlayListeners(scene){
+    console.log(scene);
     document.querySelector("#mercury-select").addEventListener("click", selectPlanet);
     document.querySelector("#venus-select").addEventListener("click", selectPlanet);
     document.querySelector("#earth-select").addEventListener("click", selectPlanet);
