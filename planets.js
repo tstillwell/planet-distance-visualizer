@@ -8,7 +8,7 @@
     document.body.appendChild( renderer.domElement );
     let sun = planetMesh({radius: 695700, texture: 0xFFFF00, name: "sun"});
     let mercury = planetMesh({radius: 2440, texture: 0x97979F, name: "mercury"});
-    let venus = planetMesh({radius: 6050, texture: 0xE5E3DB});
+    let venus = planetMesh({radius: 6050, texture: 0xE5E3DB, name: "venus"});
     let earth = planetMesh({radius: 6371, texture: 0x00FF00});
     let mars = planetMesh({radius: 3390, texture: 0xFF0000});
     let jupiter = planetMesh({radius: 69911, texture: 0xE3DCCB});
