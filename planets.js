@@ -9,7 +9,7 @@
     let sun = planetMesh({name: "sun", radius: 695700, texture: 0xFFFF00});
     let mercury = planetMesh({name: "mercury", radius: 2440, texture: 0x97979F});
     let venus = planetMesh({name: "venus", radius: 6050, texture: 0xE5E3DB});
-    let earth = planetMesh({radius: 6371, texture: 0x00FF00, name: "earth"});
+    let earth = planetMesh({name: "earth", radius: 6371, texture: 0x00FF00});
     let mars = planetMesh({radius: 3390, texture: 0xFF0000, name: "mars"});
     let jupiter = planetMesh({radius: 69911, texture: 0xE3DCCB, name: "jupiter"});
     let saturn = planetMesh({radius: 36184, texture: 0xE5E3DB, name: "saturn"});
