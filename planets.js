@@ -71,8 +71,8 @@ function positionAllInSpace(scene, planets_data){ // add all planets to model
 }
 
 function addOverlayListeners(scene){
-    console.log(scene);
-    document.querySelector("#mercury-select").addEventListener("click", selectPlanet);
+    let mercury = getBodyByName(scene, "mercury");
+    document.querySelector("#mercury-select").addEventListener("click", selectPlanet(mercury));
     document.querySelector("#venus-select").addEventListener("click", selectPlanet);
     document.querySelector("#earth-select").addEventListener("click", selectPlanet);
     document.querySelector("#mars-select").addEventListener("click", selectPlanet);
