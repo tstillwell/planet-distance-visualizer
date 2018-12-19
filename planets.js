@@ -12,7 +12,7 @@
     let earth = planetMesh({name: "earth", radius: 6371, texture: 0x00FF00});
     let mars = planetMesh({name: "mars", radius: 3390, texture: 0xFF0000});
     let jupiter = planetMesh({name: "jupiter", radius: 69911, texture: 0xE3DCCB});
-    let saturn = planetMesh({radius: 36184, texture: 0xE5E3DB, name: "saturn"});
+    let saturn = planetMesh({name: "saturn", radius: 36184, texture: 0xE5E3DB});
     let uranus = planetMesh({radius: 25362, texture: 0x8DA1AC, name: "uranus"});
     let neptune = planetMesh({radius: 24622, texture: 0x44667F, name: "neptune"});
     let distance_data = [ // distance from sun in km
