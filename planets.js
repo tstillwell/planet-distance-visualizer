@@ -85,3 +85,12 @@ function addOverlayListeners(scene){
 function selectPlanet(planetName){  // fired on clicking planet in overlay
     
 }
+
+function getBodyByName(scene, name){
+  let children = scene.children;
+  for (let index = 0; index < children.length; index++){
+      if (children[index].name === name){
+          return children[index];
+      }
+  }
+}
