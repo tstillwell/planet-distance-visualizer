@@ -77,14 +77,15 @@ function addOverlayListeners(scene){
     let mars = getBodyByName(scene, "mars");
     let jupiter = getBodyByName(scene, "jupiter");
     let saturn = getBodyByName(scene, "saturn");
+    let uranus = getBodyByName(scene, "uranus");
     document.querySelector("#mercury-select").addEventListener("click", selectPlanet(mercury));
     document.querySelector("#venus-select").addEventListener("click", selectPlanet(venus));
     document.querySelector("#earth-select").addEventListener("click", selectPlanet(earth));
     document.querySelector("#mars-select").addEventListener("click", selectPlanet(mars));
     document.querySelector("#jupiter-select").addEventListener("click", selectPlanet(jupiter));
     document.querySelector("#saturn-select").addEventListener("click", selectPlanet(saturn));
-    document.querySelector("#uranus-select").addEventListener("click", selectPlanet);
-    document.querySelector("#neptune-select").addEventListener("click", selectPlanet);
+    document.querySelector("#uranus-select").addEventListener("click", selectPlanet(uranus));
+    document.querySelector("#neptune-select").addEventListener("click", selectPlanet());
 }
 
 function selectPlanet(planetName){  // fired on clicking planet in overlay
