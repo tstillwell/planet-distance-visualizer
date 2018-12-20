@@ -76,7 +76,7 @@ function addOverlayListeners(scene){
     let earth = getBodyByName(scene, "earth");
     let mars = getBodyByName(scene, "mars");
     let jupiter = getBodyByName(scene, "jupiter");
-    let jupiter = getBodyByName(scene, "saturn");
+    let saturn = getBodyByName(scene, "saturn");
     document.querySelector("#mercury-select").addEventListener("click", selectPlanet(mercury));
     document.querySelector("#venus-select").addEventListener("click", selectPlanet(venus));
     document.querySelector("#earth-select").addEventListener("click", selectPlanet(earth));
