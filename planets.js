@@ -81,8 +81,8 @@ function addOverlayListeners(scene){
     let neptune = getBodyByName(scene, "neptune");
     document.querySelector("#mercury-select").addEventListener("click", function(){selectPlanet(mercury)});
     document.querySelector("#venus-select").addEventListener("click", function(){selectPlanet(venus)});
-    document.querySelector("#earth-select").addEventListener("click", selectPlanet(earth));
-    document.querySelector("#mars-select").addEventListener("click", selectPlanet(mars));
+    document.querySelector("#earth-select").addEventListener("click", function(){selectPlanet(earth)});
+    document.querySelector("#mars-select").addEventListener("click", function(){selectPlanet(mars)});
     document.querySelector("#jupiter-select").addEventListener("click", selectPlanet(jupiter));
     document.querySelector("#saturn-select").addEventListener("click", selectPlanet(saturn));
     document.querySelector("#uranus-select").addEventListener("click", selectPlanet(uranus));
