@@ -85,7 +85,7 @@ function addOverlayListeners(scene){
     document.querySelector("#mars-select").addEventListener("click", function(){selectPlanet(mars)});
     document.querySelector("#jupiter-select").addEventListener("click", function(){selectPlanet(jupiter)});
     document.querySelector("#saturn-select").addEventListener("click", function(){selectPlanet(saturn)});
-    document.querySelector("#uranus-select").addEventListener("click", selectPlanet(uranus));
+    document.querySelector("#uranus-select").addEventListener("click", function(){selectPlanet(uranus)});
     document.querySelector("#neptune-select").addEventListener("click", selectPlanet(neptune));
 }
 
