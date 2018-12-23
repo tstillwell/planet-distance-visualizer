@@ -11,7 +11,7 @@
     let sun = planetMesh({name: "sun", radius: 695700, texture: 0xFFFF00});
     let mercury = planetMesh({name: "mercury", radius: 2440, texture: 0x97979F});
     let venus = planetMesh({name: "venus", radius: 6050, texture: 0xE5E3DB});
-    let earth = planetMesh({name: "earth", radius: 6371, texture: 0x00FF00});
+    let earth = planetMesh({name: "earth", radius: 6371, texture: 0x00CFFF});
     let mars = planetMesh({name: "mars", radius: 3390, texture: 0xFF0000});
     let jupiter = planetMesh({name: "jupiter", radius: 69911, texture: 0xE3DCCB});
     let saturn = planetMesh({name: "saturn", radius: 36184, texture: 0xE5E3DB});
@@ -92,7 +92,7 @@ function addOverlayListeners(scene){ // bind overlay buttons to planets in scene
 }
 
 function selectPlanet(planet){  // fired on clicking planet in overlay
-    window.camera.position.set(planet.position.x, planet.position.y, 300000);
+    window.camera.position.set(planet.position.x, planet.position.y, 400000);
 }
 
 function getBodyByName(scene, name){ // retrieve planet from scene by name
