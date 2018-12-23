@@ -1,6 +1,6 @@
 (function loadScene(){
     let scene = new THREE.Scene();
-    let camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 100, 1e15 );
+    var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 100, 1e15 );
     let controls = new THREE.OrbitControls(camera);
     let renderConfig = {antialias: true, logarithmicDepthBuffer: true};
     let renderer = new THREE.WebGLRenderer(renderConfig);
@@ -90,8 +90,7 @@ function addOverlayListeners(scene){
 }
 
 function selectPlanet(planet){  // fired on clicking planet in overlay
-    console.log("firing");
-    console.log(planet);
+
 }
 
 function getBodyByName(scene, name){
