@@ -91,7 +91,7 @@ function addOverlayListeners(scene){
 }
 
 function selectPlanet(planet){  // fired on clicking planet in overlay
-    window.camera.lookAt(planet.position);
+    window.camera.position.set(planet.position.x, planet.position.y, 300000);
 }
 
 function getBodyByName(scene, name){
