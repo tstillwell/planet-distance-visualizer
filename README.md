@@ -7,8 +7,11 @@ Visualizes the scale of interplanetary space
 using idealized circular orbits for each of the
 8 planets.
 
-Orbits are not realistic.
+Clicking a planet name in the overlay will make
+the camera look at that planet.
 
+
+Orbits are not realistic.
 
 ## Usage
 
