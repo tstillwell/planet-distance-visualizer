@@ -82,14 +82,14 @@ function addOverlayListeners(scene){ // bind overlay buttons to planets in scene
     let saturn = getBodyByName(scene, "saturn");
     let uranus = getBodyByName(scene, "uranus");
     let neptune = getBodyByName(scene, "neptune");
-    document.querySelector("#mercury-select").addEventListener("click", function(){selectPlanet(mercury)});
-    document.querySelector("#venus-select").addEventListener("click", function(){selectPlanet(venus)});
-    document.querySelector("#earth-select").addEventListener("click", function(){selectPlanet(earth)});
-    document.querySelector("#mars-select").addEventListener("click", function(){selectPlanet(mars)});
-    document.querySelector("#jupiter-select").addEventListener("click", function(){selectPlanet(jupiter)});
-    document.querySelector("#saturn-select").addEventListener("click", function(){selectPlanet(saturn)});
-    document.querySelector("#uranus-select").addEventListener("click", function(){selectPlanet(uranus)});
-    document.querySelector("#neptune-select").addEventListener("click", function(){selectPlanet(neptune)});
+    document.querySelector("#mercury-select").addEventListener("click", function(){selectPlanet(mercury);});
+    document.querySelector("#venus-select").addEventListener("click", function(){selectPlanet(venus);});
+    document.querySelector("#earth-select").addEventListener("click", function(){selectPlanet(earth);});
+    document.querySelector("#mars-select").addEventListener("click", function(){selectPlanet(mars);});
+    document.querySelector("#jupiter-select").addEventListener("click", function(){selectPlanet(jupiter);});
+    document.querySelector("#saturn-select").addEventListener("click", function(){selectPlanet(saturn);});
+    document.querySelector("#uranus-select").addEventListener("click", function(){selectPlanet(uranus);});
+    document.querySelector("#neptune-select").addEventListener("click", function(){selectPlanet(neptune);});
 }
 
 
