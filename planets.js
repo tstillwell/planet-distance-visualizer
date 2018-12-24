@@ -93,6 +93,12 @@ function addOverlayListeners(scene){ // bind overlay buttons to planets in scene
 }
 
 
+function addOverlayListener(selector, planet){
+    let overlay_element = document.querySelector(selector);
+    overlay_element.addEventListener("click", function(){selectPlanet(planet);});
+}
+
+
 function selectPlanet(planet){  // fired on clicking planet in overlay
     window.camera.position.set(planet.position.x, planet.position.y, 400000);
     window.camera.lookAt(planet.position);
