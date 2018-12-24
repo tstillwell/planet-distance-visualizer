@@ -98,6 +98,7 @@ function selectPlanet(planet){  // fired on clicking planet in overlay
     window.camera.lookAt(planet.position);
 }
 
+
 function getBodyByName(scene, name){ // retrieve planet from scene by name
   let children = scene.children;
   for (let index = 0; index < children.length; index++){
