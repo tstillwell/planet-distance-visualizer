@@ -85,6 +85,7 @@ function addOverlayListeners(scene){ // bind overlay buttons to planets in scene
     bindOverlayListener("#mercury-select", mercury);
     bindOverlayListener("#venus-select", venus);
     bindOverlayListener("#earth-select", earth);
+    bindOverlayListener("#mars-select", mars);
     document.querySelector("#mars-select").addEventListener("click", function(){selectPlanet(mars);});
     document.querySelector("#jupiter-select").addEventListener("click", function(){selectPlanet(jupiter);});
     document.querySelector("#saturn-select").addEventListener("click", function(){selectPlanet(saturn);});
