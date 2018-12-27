@@ -95,7 +95,9 @@ function addOverlayListeners(scene){ // bind overlay buttons to planets in scene
 
 function bindOverlayListener(selector, planet){
     let overlay_element = document.querySelector(selector);
-    overlay_element.addEventListener("click", function(){selectPlanet(planet);});
+    overlay_element.addEventListener("click", function(){
+        selectPlanet(planet);
+    });
 }
 
 
