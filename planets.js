@@ -73,7 +73,7 @@ function positionAllInSpace(scene, planets_data){ // add all planets to model
 }
 
 
-function addOverlayListeners(scene){ // bind overlay buttons to planets in scene
+function addOverlayListeners(scene){ // add event listeners for overlay
     let mercury = getBodyByName(scene, "mercury");
     let venus = getBodyByName(scene, "venus");
     let earth = getBodyByName(scene, "earth");
