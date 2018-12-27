@@ -39,10 +39,7 @@
 })();
 
 
-function planetMesh(preMeshData){ // Give mesh for each planet
-    let radius = preMeshData.radius;
-    let texture = preMeshData.texture;
-    let name = preMeshData.name;
+function planetMesh({name, radius, texture}){ // Give mesh for each planet
     let geometry = new THREE.SphereGeometry( radius * 2, 32, 32);
     let material = new THREE.MeshBasicMaterial( {color: texture} );
     let planet = new THREE.Mesh(geometry, material);
