@@ -23,4 +23,4 @@ Clone repo to directory where you want to host the app.
 
 ## License
 
-MIT License. See LICENSE file for full license text
+MIT License. See `LICENSE` file for full license text
