@@ -10,7 +10,6 @@ using idealized circular orbits for each of the
 Clicking a planet name in the overlay will make
 the camera look at that planet.
 
-
 Orbits are not realistic.
 
 ## Usage
