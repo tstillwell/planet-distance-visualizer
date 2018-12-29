@@ -5,7 +5,7 @@ built for the browser with javascript (and Three.js)
 
 Visualizes the scale of interplanetary space
 using idealized (not realistic) orbits for each of the
-8 planets.
+8 planets. Planet distances used are average distance.
 
 Clicking a planet name in the overlay will make
 the camera look at that planet.
