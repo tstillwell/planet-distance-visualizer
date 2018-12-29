@@ -1,6 +1,6 @@
 # Planetary distance visualizer
 
-Scale model of our solar system
+A scale model of our solar system
 built for the browser with javascript (and Three.js)
 
 Visualizes the scale of interplanetary space
