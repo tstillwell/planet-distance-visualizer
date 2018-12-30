@@ -1,4 +1,4 @@
-# Planetary distance visualizer
+# Planetary distance visualizer #
 
 A scale model of our solar system
 built for the browser with javascript.
@@ -10,17 +10,16 @@ using idealized (not realistic) orbits for each of the
 Clicking a planet name in the overlay will make
 the camera look at that planet.
 
-
-## Usage
+## Usage ##
 
 Clone or download this repo
 
 Open `planets.html` in a web browser
 
-## Hosting
+## Hosting ##
 
 Clone repo to directory where you want to host the app.
 
-## License
+## License ##
 
 MIT License. See `LICENSE` file for full license text
