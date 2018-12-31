@@ -1,4 +1,5 @@
 (function loadScene(){
+    "use strict";
     let scene = new THREE.Scene();
     let camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 100, 1e15 );
     window.camera = camera;
