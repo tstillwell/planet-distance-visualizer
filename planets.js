@@ -111,6 +111,6 @@ function getBodyByName(scene, name){ // retrieve planet from scene by name
   for (body in bodylist){
     if (bodylist[body].name === name){
           return bodylist[body];
-      }
+    }
   }
 }
