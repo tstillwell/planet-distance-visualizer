@@ -20,6 +20,12 @@ Open `planets.html` in a web browser
 
 Clone repo to directory where you want to host the app.
 
+### Three.js ###
+
+Uses Three.js 3d graphics library
+
+https://threejs.org/
+
 ## License ##
 
 MIT License. See `LICENSE` file for full license text
