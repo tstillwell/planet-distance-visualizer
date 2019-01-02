@@ -37,7 +37,7 @@
         renderer.render( scene, camera );
     };
     animate();
-})();
+}());
 
 
 function planetMesh({name, radius, texture}){ // Give mesh for each planet
