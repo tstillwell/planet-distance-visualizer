@@ -2,9 +2,7 @@
     "use strict";
     let scene = new THREE.Scene();
     let camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 100, 1e15 );
-    window.camera = camera;
     let controls = new THREE.OrbitControls(camera);
-    window.controls = controls;
     let renderConfig = {antialias: true, logarithmicDepthBuffer: true};
     let renderer = new THREE.WebGLRenderer(renderConfig);
     let sun = planetMesh({name: "sun", radius: 695700, texture: 0xFFFF00});
@@ -27,6 +25,8 @@
         {id: uranus, distance: 1784000000},
         {id: neptune, distance: 4495000000}
     ];
+    window.camera = camera;
+    window.controls = controls;
     renderer.setSize( window.innerWidth, window.innerHeight );
     document.body.appendChild( renderer.domElement );
     positionAllInSpace(scene, distance_data);
