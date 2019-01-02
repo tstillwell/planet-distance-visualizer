@@ -7,8 +7,6 @@
     window.controls = controls;
     let renderConfig = {antialias: true, logarithmicDepthBuffer: true};
     let renderer = new THREE.WebGLRenderer(renderConfig);
-    renderer.setSize( window.innerWidth, window.innerHeight );
-    document.body.appendChild( renderer.domElement );
     let sun = planetMesh({name: "sun", radius: 695700, texture: 0xFFFF00});
     let mercury = planetMesh({name: "mercury", radius: 2440, texture: 0x97979F});
     let venus = planetMesh({name: "venus", radius: 6050, texture: 0xE5E3DB});
@@ -29,6 +27,8 @@
         {id: uranus, distance: 1784000000},
         {id: neptune, distance: 4495000000}
     ];
+    renderer.setSize( window.innerWidth, window.innerHeight );
+    document.body.appendChild( renderer.domElement );
     positionAllInSpace(scene, distance_data);
     addOverlayListeners(scene);
     camera.position.z = 250000000;
