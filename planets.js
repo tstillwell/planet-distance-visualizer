@@ -26,7 +26,6 @@
         {id: neptune, distance: 4495000000}
     ];
     window.camera = camera;
-    window.controls = controls;
     renderer.setSize( window.innerWidth, window.innerHeight );
     document.body.appendChild( renderer.domElement );
     positionAllInSpace(scene, distance_data);
