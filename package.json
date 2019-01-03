@@ -1,0 +1,19 @@
+{
+  "name": "planet-distance-visualizer",
+  "version": "1.0.0",
+  "description": "A scale model of our solar system built for the browser with javascript.",
+  "main": "planets.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tstillwell/planet-distance-visualizer.git"
+  },
+  "author": "Tristan Stillwell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tstillwell/planet-distance-visualizer/issues"
+  },
+  "homepage": "https://github.com/tstillwell/planet-distance-visualizer#readme"
+}
