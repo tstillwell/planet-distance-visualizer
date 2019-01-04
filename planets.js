@@ -2,7 +2,7 @@
   "use strict";
   let scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 100, 1e15 );
-  let controls = new THREE.OrbitControls(camera);
+  const controls = new THREE.OrbitControls(camera);
   let renderConfig = {antialias: true, logarithmicDepthBuffer: true};
   let renderer = new THREE.WebGLRenderer(renderConfig);
   let sun = planetMesh({name: "sun", radius: 695700, texture: 0xFFFF00});
