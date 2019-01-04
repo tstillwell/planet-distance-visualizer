@@ -1,41 +1,41 @@
 (function loadScene() {
-    "use strict";
-    let scene = new THREE.Scene();
-    let camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 100, 1e15 );
-    let controls = new THREE.OrbitControls(camera);
-    let renderConfig = {antialias: true, logarithmicDepthBuffer: true};
-    let renderer = new THREE.WebGLRenderer(renderConfig);
-    let sun = planetMesh({name: "sun", radius: 695700, texture: 0xFFFF00});
-    let mercury = planetMesh({name: "mercury", radius: 2440, texture: 0x97979F});
-    let venus = planetMesh({name: "venus", radius: 6050, texture: 0xE5E3DB});
-    let earth = planetMesh({name: "earth", radius: 6371, texture: 0x00CFFF});
-    let mars = planetMesh({name: "mars", radius: 3390, texture: 0xB08960});
-    let jupiter = planetMesh({name: "jupiter", radius: 69911, texture: 0xAD8D74});
-    let saturn = planetMesh({name: "saturn", radius: 36184, texture: 0xE5E3DB});
-    let uranus = planetMesh({name: "uranus", radius: 25362, texture: 0x8DA1AC});
-    let neptune = planetMesh({name: "neptune", radius: 24622, texture: 0x44667F});
-    let distance_data = [ // avg distance from sun in km
-        {id: sun, distance: 0},
-        {id: mercury, distance: 57909050},
-        {id: venus, distance: 108200000},
-        {id: earth, distance: 149600000},
-        {id: mars, distance: 227900000},
-        {id: jupiter, distance: 483800000},
-        {id: saturn, distance: 1434000000},
-        {id: uranus, distance: 1784000000},
-        {id: neptune, distance: 4495000000}
-    ];
-    window.camera = camera;
-    renderer.setSize( window.innerWidth, window.innerHeight );
-    document.body.appendChild( renderer.domElement );
-    positionAllInSpace(scene, distance_data);
-    addOverlayListeners(scene);
-    camera.position.z = 250000000;
-    let animate = function () {
-        requestAnimationFrame( animate );
-        renderer.render( scene, camera );
-    };
-    animate();
+  "use strict";
+  let scene = new THREE.Scene();
+  let camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 100, 1e15 );
+  let controls = new THREE.OrbitControls(camera);
+  let renderConfig = {antialias: true, logarithmicDepthBuffer: true};
+  let renderer = new THREE.WebGLRenderer(renderConfig);
+  let sun = planetMesh({name: "sun", radius: 695700, texture: 0xFFFF00});
+  let mercury = planetMesh({name: "mercury", radius: 2440, texture: 0x97979F});
+  let venus = planetMesh({name: "venus", radius: 6050, texture: 0xE5E3DB});
+  let earth = planetMesh({name: "earth", radius: 6371, texture: 0x00CFFF});
+  let mars = planetMesh({name: "mars", radius: 3390, texture: 0xB08960});
+  let jupiter = planetMesh({name: "jupiter", radius: 69911, texture: 0xAD8D74});
+  let saturn = planetMesh({name: "saturn", radius: 36184, texture: 0xE5E3DB});
+  let uranus = planetMesh({name: "uranus", radius: 25362, texture: 0x8DA1AC});
+  let neptune = planetMesh({name: "neptune", radius: 24622, texture: 0x44667F});
+  let distance_data = [ // avg distance from sun in km
+    {id: sun, distance: 0},
+    {id: mercury, distance: 57909050},
+    {id: venus, distance: 108200000},
+    {id: earth, distance: 149600000},
+    {id: mars, distance: 227900000},
+    {id: jupiter, distance: 483800000},
+    {id: saturn, distance: 1434000000},
+    {id: uranus, distance: 1784000000},
+    {id: neptune, distance: 4495000000}
+  ];
+  window.camera = camera;
+  renderer.setSize( window.innerWidth, window.innerHeight );
+  document.body.appendChild( renderer.domElement );
+  positionAllInSpace(scene, distance_data);
+  addOverlayListeners(scene);
+  camera.position.z = 250000000;
+  let animate = function () {
+    requestAnimationFrame( animate );
+    renderer.render( scene, camera );
+  };
+  animate();
 }());
 
 
