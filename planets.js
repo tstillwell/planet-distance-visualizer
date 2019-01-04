@@ -73,22 +73,22 @@ function positionAllInSpace(scene, planets_data){ // add all planets to model
 
 
 function addOverlayListeners(scene){ // add event listeners for overlay
-    let mercury = getBodyByName(scene, "mercury");
-    let venus = getBodyByName(scene, "venus");
-    let earth = getBodyByName(scene, "earth");
-    let mars = getBodyByName(scene, "mars");
-    let jupiter = getBodyByName(scene, "jupiter");
-    let saturn = getBodyByName(scene, "saturn");
-    let uranus = getBodyByName(scene, "uranus");
-    let neptune = getBodyByName(scene, "neptune");
-    bindOverlayListener("#mercury-select", mercury);
-    bindOverlayListener("#venus-select", venus);
-    bindOverlayListener("#earth-select", earth);
-    bindOverlayListener("#mars-select", mars);
-    bindOverlayListener("#jupiter-select", jupiter);
-    bindOverlayListener("#saturn-select", saturn);
-    bindOverlayListener("#uranus-select", uranus);
-    bindOverlayListener("#neptune-select", neptune);
+  let mercury = getBodyByName(scene, "mercury");
+  let venus = getBodyByName(scene, "venus");
+  let earth = getBodyByName(scene, "earth");
+  let mars = getBodyByName(scene, "mars");
+  let jupiter = getBodyByName(scene, "jupiter");
+  let saturn = getBodyByName(scene, "saturn");
+  let uranus = getBodyByName(scene, "uranus");
+  let neptune = getBodyByName(scene, "neptune");
+  bindOverlayListener("#mercury-select", mercury);
+  bindOverlayListener("#venus-select", venus);
+  bindOverlayListener("#earth-select", earth);
+  bindOverlayListener("#mars-select", mars);
+  bindOverlayListener("#jupiter-select", jupiter);
+  bindOverlayListener("#saturn-select", saturn);
+  bindOverlayListener("#uranus-select", uranus);
+  bindOverlayListener("#neptune-select", neptune);
 }
 
 
