@@ -59,16 +59,16 @@ function orbitRingFactory(distance){ // Make ring representing orbit
 
 
 function positionAllInSpace(scene, planets_data){ // add all planets to model
-    planets_data.forEach(function(distance_data){
-        let bodyname = distance_data.id;
-        let distance = distance_data.distance;
-        let ring = orbitRingFactory(distance);
-        if (distance !== 0){ // dont add ring for sun
-          scene.add(ring);
-        }
-        scene.add(bodyname);
-        bodyname.position.set(distance, 0, 0);
-    });
+  planets_data.forEach(function(distance_data){
+    let bodyname = distance_data.id;
+    let distance = distance_data.distance;
+    let ring = orbitRingFactory(distance);
+    if (distance !== 0){ // dont add ring for sun
+      scene.add(ring);
+    }
+    scene.add(bodyname);
+    bodyname.position.set(distance, 0, 0);
+  });
 }
 
 
