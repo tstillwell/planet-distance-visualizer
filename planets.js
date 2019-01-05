@@ -3,7 +3,7 @@
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 100, 1e15);
   const controls = new THREE.OrbitControls(camera);
-  let renderConfig = {antialias: true, logarithmicDepthBuffer: true};
+  const renderConfig = {antialias: true, logarithmicDepthBuffer: true};
   let renderer = new THREE.WebGLRenderer(renderConfig);
   let sun = planetMesh({name: "sun", radius: 695700, texture: 0xFFFF00});
   let mercury = planetMesh({name: "mercury", radius: 2440, texture: 0x97979F});
