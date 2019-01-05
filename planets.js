@@ -1,7 +1,7 @@
 (function loadScene() {
   'use strict';
   const scene = new THREE.Scene();
-  const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 100, 1e15 );
+  const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 100, 1e15);
   const controls = new THREE.OrbitControls(camera);
   let renderConfig = {antialias: true, logarithmicDepthBuffer: true};
   let renderer = new THREE.WebGLRenderer(renderConfig);
