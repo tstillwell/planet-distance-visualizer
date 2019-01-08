@@ -5,7 +5,7 @@
   const controls = new THREE.OrbitControls(camera);
   const renderConfig = { antialias: true, logarithmicDepthBuffer: true };
   const renderer = new THREE.WebGLRenderer(renderConfig);
-  const sun = planetMesh({ name: "sun", radius: 695700, texture: 0xFFFF00 });
+  const sun = planetMesh({ name: 'sun', radius: 695700, texture: 0xFFFF00 });
   const mercury = planetMesh({ name: "mercury", radius: 2440, texture: 0x97979F });
   const venus = planetMesh({ name: "venus", radius: 6050, texture: 0xE5E3DB });
   const earth = planetMesh({ name: "earth", radius: 6371, texture: 0x00CFFF });
