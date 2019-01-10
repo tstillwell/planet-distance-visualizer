@@ -15,15 +15,15 @@
   const uranus = planetMesh({ name: 'uranus', radius: 25362, texture: 0x8DA1AC });
   const neptune = planetMesh({ name: 'neptune', radius: 24622, texture: 0x44667F });
   const distanceData = [ // avg distance from sun in km
-    {id: sun, distance: 0},
-    {id: mercury, distance: 57909050},
-    {id: venus, distance: 108200000},
-    {id: earth, distance: 149600000},
-    {id: mars, distance: 227900000},
-    {id: jupiter, distance: 483800000},
-    {id: saturn, distance: 1434000000},
-    {id: uranus, distance: 1784000000},
-    {id: neptune, distance: 4495000000}
+    { id: sun, distance: 0 },
+    { id: mercury, distance: 57909050 },
+    { id: venus, distance: 108200000 },
+    { id: earth, distance: 149600000 },
+    { id: mars, distance: 227900000 },
+    { id: jupiter, distance: 483800000 },
+    { id: saturn, distance: 1434000000 },
+    { id: uranus, distance: 1784000000 },
+    { id: neptune, distance: 4495000000 }
   ];
   window.camera = camera;
   renderer.setSize( window.innerWidth, window.innerHeight );
