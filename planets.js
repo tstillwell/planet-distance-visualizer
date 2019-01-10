@@ -23,7 +23,7 @@
     { id: jupiter, distance: 483800000 },
     { id: saturn, distance: 1434000000 },
     { id: uranus, distance: 1784000000 },
-    { id: neptune, distance: 4495000000 }
+    { id: neptune, distance: 4495000000 },
   ];
   window.camera = camera;
   renderer.setSize( window.innerWidth, window.innerHeight );
