@@ -14,7 +14,7 @@
   const saturn = planetMesh({ name: 'saturn', radius: 36184, texture: 0xE5E3DB });
   const uranus = planetMesh({ name: 'uranus', radius: 25362, texture: 0x8DA1AC });
   const neptune = planetMesh({ name: 'neptune', radius: 24622, texture: 0x44667F });
-  const distance_data = [ // avg distance from sun in km
+  const distanceData = [ // avg distance from sun in km
     {id: sun, distance: 0},
     {id: mercury, distance: 57909050},
     {id: venus, distance: 108200000},
@@ -28,7 +28,7 @@
   window.camera = camera;
   renderer.setSize( window.innerWidth, window.innerHeight );
   document.body.appendChild( renderer.domElement );
-  positionAllInSpace(scene, distance_data);
+  positionAllInSpace(scene, distanceData);
   addOverlayListeners(scene);
   camera.position.z = 250000000;
   let animate = function () {
