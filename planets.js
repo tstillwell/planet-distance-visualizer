@@ -27,7 +27,7 @@
   ];
   window.camera = camera;
   renderer.setSize(window.innerWidth, window.innerHeight);
-  document.body.appendChild( renderer.domElement );
+  document.body.appendChild(renderer.domElement);
   positionAllInSpace(scene, distanceData);
   addOverlayListeners(scene);
   camera.position.z = 250000000;
