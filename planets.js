@@ -41,7 +41,7 @@
 
 function planetMesh({name, radius, texture}){ // Give mesh for each planet
   const geometry = new THREE.SphereGeometry( radius * 2, 32, 32);
-  let material = new THREE.MeshBasicMaterial( {color: texture} );
+  const material = new THREE.MeshBasicMaterial( {color: texture} );
   let planet = new THREE.Mesh(geometry, material);
   planet.name = name;
   return planet;
