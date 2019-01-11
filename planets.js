@@ -31,7 +31,7 @@
   positionAllInSpace(scene, distanceData);
   addOverlayListeners(scene);
   camera.position.z = 250000000;
-  const animate = function () {
+  function animate() {
     requestAnimationFrame( animate );
     renderer.render( scene, camera );
   };
