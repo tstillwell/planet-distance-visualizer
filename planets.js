@@ -50,7 +50,7 @@ function planetMesh({name, radius, texture}){ // Give mesh for each planet
 
 function orbitRingFactory(distance){ // Make ring representing orbit
   const geometry = new THREE.RingGeometry( distance, distance + 500000, 256 );
-  let material = new THREE.MeshBasicMaterial({
+  const material = new THREE.MeshBasicMaterial({
     color: 0x00FFFF, side: THREE.DoubleSide
   });
   let ring = new THREE.Mesh( geometry, material );
