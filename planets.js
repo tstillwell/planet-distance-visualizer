@@ -79,7 +79,7 @@ function addOverlayListeners(scene){ // add event listeners for overlay
   const mars = getBodyByName(scene, "mars");
   const jupiter = getBodyByName(scene, "jupiter");
   const saturn = getBodyByName(scene, "saturn");
-  let uranus = getBodyByName(scene, "uranus");
+  const uranus = getBodyByName(scene, "uranus");
   let neptune = getBodyByName(scene, "neptune");
   bindOverlayListener("#mercury-select", mercury);
   bindOverlayListener("#venus-select", venus);
