@@ -108,7 +108,7 @@ function selectPlanet(planet){  // fired on clicking planet in overlay
 
 function getBodyByName(scene, name){ // retrieve planet from scene by name
   const bodylist = scene.children;
-  for (body in bodylist){
+  for (body in bodylist){ 
     if (bodylist[body].name === name){
       return bodylist[body];
     }
