@@ -32,7 +32,7 @@
   addOverlayListeners(scene);
   camera.position.z = 250000000;
   function animate() {
-    requestAnimationFrame( animate );
+    requestAnimationFrame(animate);
     renderer.render( scene, camera );
   };
   animate();
