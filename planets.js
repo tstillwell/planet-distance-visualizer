@@ -59,9 +59,9 @@ function orbitRingFactory(distance){ // Make ring representing orbit
 
 
 function positionAllInSpace(scene, planetsData){ // add all planets to model
-  planetsData.forEach(function(distance_data){
-    const bodyname = distance_data.id;
-    const distance = distance_data.distance;
+  planetsData.forEach(function(distanceData){
+    const bodyname = distanceData.id;
+    const distance = distanceData.distance;
     const ring = orbitRingFactory(distance);
     if (distance !== 0){ // dont add ring for sun
       scene.add(ring);
