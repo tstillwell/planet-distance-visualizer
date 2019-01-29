@@ -73,7 +73,6 @@ function positionAllInSpace(scene, planetsData) { // add all planets to model
 
 
 function addOverlayListeners(scene) { // add event listeners for overlay
-  const jupiter = getBodyByName(scene, 'jupiter');
   const saturn = getBodyByName(scene, 'saturn');
   const uranus = getBodyByName(scene, 'uranus');
   const neptune = getBodyByName(scene, 'neptune');
@@ -81,7 +80,7 @@ function addOverlayListeners(scene) { // add event listeners for overlay
   bindOverlayListener('#venus-select', getBodyByName(scene, 'venus'));
   bindOverlayListener('#earth-select', getBodyByName(scene, 'earth'));
   bindOverlayListener('#mars-select', getBodyByName(scene, 'mars'));
-  bindOverlayListener('#jupiter-select', jupiter);
+  bindOverlayListener('#jupiter-select', getBodyByName(scene, 'jupiter'));
   bindOverlayListener('#saturn-select', saturn);
   bindOverlayListener('#uranus-select', uranus);
   bindOverlayListener('#neptune-select', neptune);
