@@ -59,7 +59,7 @@ function orbitRingFactory(distance) { // Make ring representing orbit
 
 
 function positionAllInSpace(scene, planetsData) { // add all planets to model
-  planetsData.forEach(function(distanceData){
+  planetsData.forEach(function (distanceData) {
     const bodyname = distanceData.id;
     const distance = distanceData.distance;
     const ring = orbitRingFactory(distance);
