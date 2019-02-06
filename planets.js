@@ -93,7 +93,8 @@ function bindOverlayListener(selector, planet) {
 }
 
 
-function selectPlanet(planet) { // fired on clicking planet in overlay
+function selectPlanet(planet) {
+  // fired on clicking planet in overlay
   window.camera.position.set(planet.position.x, planet.position.y, 400000);
   window.camera.lookAt(planet.position);
 }
