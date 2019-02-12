@@ -5,15 +5,15 @@
   const controls = new THREE.OrbitControls(camera);
   const renderConfig = { antialias: true, logarithmicDepthBuffer: true };
   const renderer = new THREE.WebGLRenderer(renderConfig);
-  const sun = planetMesh({ name: 'sun', radius: 695700, texture: 0xFFFF00 });
-  const mercury = planetMesh({ name: 'mercury', radius: 2440, texture: 0x97979F });
-  const venus = planetMesh({ name: 'venus', radius: 6050, texture: 0xE5E3DB });
-  const earth = planetMesh({ name: 'earth', radius: 6371, texture: 0x00CFFF });
-  const mars = planetMesh({ name: 'mars', radius: 3390, texture: 0xB08960 });
-  const jupiter = planetMesh({ name: 'jupiter', radius: 69911, texture: 0xAD8D74 });
-  const saturn = planetMesh({ name: 'saturn', radius: 36184, texture: 0xE5E3DB });
-  const uranus = planetMesh({ name: 'uranus', radius: 25362, texture: 0x8DA1AC });
-  const neptune = planetMesh({ name: 'neptune', radius: 24622, texture: 0x44667F });
+  const sun = PlanetMesh({ name: 'sun', radius: 695700, texture: 0xFFFF00 });
+  const mercury = PlanetMesh({ name: 'mercury', radius: 2440, texture: 0x97979F });
+  const venus = PlanetMesh({ name: 'venus', radius: 6050, texture: 0xE5E3DB });
+  const earth = PlanetMesh({ name: 'earth', radius: 6371, texture: 0x00CFFF });
+  const mars = PlanetMesh({ name: 'mars', radius: 3390, texture: 0xB08960 });
+  const jupiter = PlanetMesh({ name: 'jupiter', radius: 69911, texture: 0xAD8D74 });
+  const saturn = PlanetMesh({ name: 'saturn', radius: 36184, texture: 0xE5E3DB });
+  const uranus = PlanetMesh({ name: 'uranus', radius: 25362, texture: 0x8DA1AC });
+  const neptune = PlanetMesh({ name: 'neptune', radius: 24622, texture: 0x44667F });
   const distanceData = [ // avg distance from sun in km
     { id: sun, distance: 0 },
     { id: mercury, distance: 57909050 },
@@ -39,7 +39,7 @@
 }());
 
 
-function planetMesh({ name, radius, texture }) { 
+function PlanetMesh({ name, radius, texture }) { 
   // Generates 3D Mesh for each planet
   const geometry = new THREE.SphereGeometry(radius * 2, 32, 32);
   const material = new THREE.MeshBasicMaterial({ color: texture });
