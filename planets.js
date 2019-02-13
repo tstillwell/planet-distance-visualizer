@@ -49,7 +49,7 @@ function PlanetMesh({ name, radius, texture }) {
 }
 
 
-function orbitRing(distance) {
+function OrbitRing(distance) {
   // Make ring representing orbit
   const geometry = new THREE.RingGeometry(distance, distance + 500000, 256);
   const material = new THREE.MeshBasicMaterial({
@@ -65,7 +65,7 @@ function positionAllInSpace(scene, planetsData) {
   planetsData.forEach(function (distanceData) {
     const bodyname = distanceData.id;
     const distance = distanceData.distance;
-    const ring = orbitRing(distance);
+    const ring = OrbitRing(distance);
     if (distance !== 0) { // dont add ring for sun
       scene.add(ring);
     }
