@@ -75,7 +75,7 @@ function positionAllInSpace(scene, planetsData) {
 }
 
 
-function addOverlayListeners(scene) { 
+function addOverlayListeners(scene) {
   // add event listeners for overlay
   bindOverlayListener('#mercury-select', getBodyByName(scene, 'mercury'));
   bindOverlayListener('#venus-select', getBodyByName(scene, 'venus'));
