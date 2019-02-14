@@ -39,7 +39,7 @@
 }());
 
 
-function PlanetMesh({ name, radius, texture }) { 
+function PlanetMesh({ name, radius, texture }) {
   // Generates 3D Mesh for each planet
   const geometry = new THREE.SphereGeometry(radius * 2, 32, 32);
   const material = new THREE.MeshBasicMaterial({ color: texture });
