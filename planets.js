@@ -60,7 +60,7 @@ function OrbitRing(distance) {
 }
 
 
-function positionAllInSpace(scene, planetsData) { 
+function positionAllInSpace(scene, planetsData) {
   // add all planets to model
   planetsData.forEach(function (distanceData) {
     const bodyname = distanceData.id;
