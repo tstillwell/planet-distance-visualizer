@@ -107,9 +107,9 @@ function selectPlanet(planet) {
 function getBodyByName(scene, name) {
   // retrieve planet from scene by name
   const bodylist = scene.children;
-  for (body in bodylist) {
-    if (bodylist[body].name === name) {
-      return bodylist[body];
+  for (let i=0; i < bodylist.length; i += 1){
+    if (bodylist[i].name === name) {
+      return bodylist[i];
     }
   }
 }
